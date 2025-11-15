@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Personal - Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="ficha">
+            
+            <header class="encabezado">
+                <div>
+                    <h1>Ficha Personal</h1>
+                    <p>Perfil de Estudiante</p>
+                </div>
+                <button id="interruptorModoOscuro" class="boton-modo-oscuro" title="Cambiar modo">
+                </button>
+            </header>
+
+            <main class="contenido-principal">
+                <div class="area-perfil-superior">
+                    
+                    <div class="detalles-perfil">
+                        <h2>Juan Carlos Pérez González</h2>
+                        <nav class="menu-navegacion">
+                            <a href="index.html" class="boton-nav">HOME</a>
+                            <a href="https://valenurcullu.github.io/CafeteriaBrewHaven/" target="_blank" rel="noopener noreferrer" class="boton-nav">Local Com</a>
+                            <a href="contacto.html" class="boton-nav activo">Contacto</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <section class="contenido-perfil-principal">
+                    <img src="./Imagenes/fotoPerfil.jpg" alt="Foto de perfil" class="foto-perfil">
+
+                    <h3>Formulario de Contacto</h3>
+                    <form id="formularioContacto" class="formulario-contacto" novalidate>
+                            <div class="grupo-formulario">
+                                <label for="nombre">Nombre Completo</label>
+                                <input type="text" id="nombre" name="nombre" class="entrada-formulario" required>
+                                <p id="errorNombre" class="mensaje-error">Por favor, ingresa tu nombre completo.</p>
+                            </div>
+                            
+                            <div class="grupo-formulario">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" class="entrada-formulario" required>
+                                <p id="errorEmail" class="mensaje-error">Por favor, ingresa un email válido.</p>
+                            </div>
+
+                            <div class="grupo-formulario">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" class="entrada-formulario" required></textarea>
+                                <p id="errorMensaje" class="mensaje-error">Por favor, escribe tu mensaje.</p>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </main>
+
+            <footer class="pie-pagina">
+                <p>© 2025 Todos los derechos reservados</p>
+                <a href="https://github.com/valenurcullu" target="_blank" rel="noopener noreferrer" class="boton-nav boton-github">
+                    Ver en GitHub
+                </a>
+            </footer>
+
+        </div>
+    </div>
+
+    <div id="modalExito" class="superposicion-modal">
+        <div class="contenido-modal">
+            <h3>¡Mensaje enviado!</h3>
+            <p>Tu consulta fue enviada exitosamente.</p>
+            <button id="botonCerrarModal" class="boton-enviar boton-modal">Cerrar</button>
+        </div>
+    </div>
+
+</body>
+</html>
